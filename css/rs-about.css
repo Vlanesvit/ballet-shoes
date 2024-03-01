@@ -1,0 +1,214 @@
+@media (min-width: 991.98px) {
+  .rs-about {
+    padding: 80px 0px 94px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1439.98px) {
+  .rs-about {
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-about {
+    padding-bottom: 20px;
+  }
+}
+.rs-about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .rs-about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.rs-about__bg {
+  position: absolute;
+  z-index: -1;
+}
+.rs-about__bg svg path {
+  --opacity: 1;
+  --path: 10000;
+  stroke: #e2e2e2;
+  fill: none;
+  stroke-width: 0.5px;
+  stroke-dasharray: var(--path);
+  stroke-dashoffset: var(--path);
+  -webkit-animation: draw 20s ease-in-out infinite;
+          animation: draw 20s ease-in-out infinite;
+}
+@-webkit-keyframes draw {
+  0% {
+    stroke-dashoffset: var(--path);
+    opacity: var(--opacity);
+  }
+  80% {
+    stroke-dashoffset: 0;
+    opacity: var(--opacity);
+  }
+  90% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: var(--path);
+    opacity: var(--opacity);
+  }
+  80% {
+    stroke-dashoffset: 0;
+    opacity: var(--opacity);
+  }
+  90% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+.rs-about__bg-1 {
+  top: -6%;
+  left: -2.3%;
+  width: 443px;
+  height: 847px;
+}
+@media (max-width: 991.98px) {
+  .rs-about__bg-1 {
+    width: 179px;
+    height: 369px;
+    bottom: 85px;
+    top: auto;
+    left: -34px;
+  }
+}
+.rs-about__bg-2 {
+  top: -4.4%;
+  right: -5.4%;
+  width: 227px;
+  height: 472px;
+}
+@media (max-width: 991.98px) {
+  .rs-about__bg-2 {
+    width: 84px;
+    height: 192px;
+    right: -35px;
+    bottom: 22px;
+    top: auto;
+  }
+}
+.rs-about__picture {
+  width: 100%;
+  max-width: 422px;
+}
+@media (max-width: 1439.98px) {
+  .rs-about__picture {
+    max-width: 300px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-about__picture {
+    padding: 60px 80px 0px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+.rs-about__picture img {
+  max-width: 100%;
+}
+@media (max-width: 767.98px) {
+  .rs-about__picture img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+.rs-about__desc {
+  width: 100%;
+  max-width: 930px;
+  margin-left: 8px;
+  margin-right: -20px;
+  margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1699.98px) {
+  .rs-about__desc {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-about__desc {
+    max-width: 100%;
+  }
+}
+.rs-about__desc img {
+  margin-bottom: 36px;
+}
+@media (max-width: 1169.98px) {
+  .rs-about__desc img {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-about__desc img {
+    width: 42px;
+  }
+}
+.rs-about__desc h2 {
+  margin-bottom: 30px;
+}
+@media (max-width: 1169.98px) {
+  .rs-about__desc h2 {
+    margin-bottom: 15px;
+  }
+}
+.rs-about__desc .rs-btn {
+  margin-top: 15px;
+}
+@media (max-width: 1169.98px) {
+  .rs-about__desc .rs-btn {
+    margin-top: 0px;
+  }
+}
+.rs-about__desc p {
+  max-width: 715px;
+  margin-bottom: 13px;
+}
+@media (max-width: 1169.98px) {
+  .rs-about__desc p {
+    margin-bottom: 16px;
+  }
+}

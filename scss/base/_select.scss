@@ -1,0 +1,196 @@
+.select {
+	position: relative;
+	width: 100%;
+
+	// .select__body
+	&__body {
+		position: relative;
+	}
+
+	// .select__title
+	&__title {
+		color: inherit;
+		text-align: left;
+		cursor: pointer;
+		width: 100%;
+		border: 1px solid #dbdbdb;
+		background-color: #fff;
+		border-radius: 50px;
+		position: relative;
+		z-index: 11;
+		transition:
+			border-color 0.3s ease 0s,
+			background-color 0.3s ease 0s;
+	}
+
+	// .select__value
+	&__value {
+		display: flex;
+		align-items: center;
+		padding: 15px 20px;
+		font-weight: 400;
+		font-size: 16px;
+		letter-spacing: 0.03em;
+		color: #000;
+		transition: color 0.3s ease 0s;
+
+		@media (max-width: 1439.98px) {
+			font-size: 14px;
+		}
+
+		@media (max-width: 991.98px) {
+			padding: 10px 20px;
+			font-size: 13px;
+		}
+
+		> * {
+			flex: 1 1 auto;
+		}
+
+		&:after {
+			content: "";
+			background-image: url("../img/icons/select-arrow-blue.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			max-width: 13px;
+			max-height: 8px;
+			min-width: 13px;
+			min-height: 8px;
+			margin: 0px 0px 0px 8px;
+			transition: all 0.3s ease 0s;
+
+			._select-open & {
+				transform: rotate(-180deg);
+			}
+		}
+
+		&._select-pseudo-label {
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&__content {
+	}
+
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+	}
+
+	// .select__options
+	&__options {
+		position: absolute;
+		top: calc(100% - 29px);
+		min-width: 100%;
+		left: 0;
+		box-shadow: 0 11px 22px 0 rgba(0, 64, 100, 0.1);
+		background: #fff;
+		border-radius: 5px;
+		padding: 38px 20px 8px 20px;
+		z-index: 10;
+	}
+
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальная высота
+		max-height: 164px;
+		padding-right: 12px;
+
+		&::-webkit-scrollbar {
+			cursor: pointer;
+			width: 2px;
+			background: #dbdbdb;
+			border-radius: 1px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			cursor: pointer;
+			background: #0c75af;
+			transition: 0.2s ease-in-out;
+			border-radius: 1px;
+		}
+
+		// Стили скроллбара
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+
+	// .select__option
+	&__option {
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		font-weight: 400;
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		color: #000;
+		transition: all 0.3s ease 0s;
+		padding: 12px 0px;
+
+		@media (max-width: 991.98px) {
+			font-size: 13px;
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #dbdbdb;
+		}
+
+		&:first-child {
+			display: none;
+		}
+
+		&._select-selected {
+			color: #0c75af;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #0c75af;
+			}
+		}
+	}
+
+	// Конструкция дополнительных данных
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&__asset {
+	}
+
+	&__text {
+	}
+
+	// Состояния селекта
+	&._select-open {
+		z-index: 5;
+
+		.select__title {
+			background-color: #0c75af;
+			border-color: #0c75af;
+		}
+
+		.select__value {
+			color: #fff;
+
+			&::after {
+				background-image: url("../img/icons/select-arrow-white.svg");
+			}
+		}
+	}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}

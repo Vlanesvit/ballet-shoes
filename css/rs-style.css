@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
 * {
@@ -55,7 +54,6 @@ body {
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
-  height: 100%;
 }
 
 body {
@@ -992,11 +990,11 @@ textarea.rs-input {
 
 .rs-breadcrumbs {
   position: relative;
-  margin-top: 14px;
+  margin-top: 30px;
 }
 @media (max-width: 991.98px) {
   .rs-breadcrumbs {
-    margin-top: 3px;
+    margin-top: 15px;
   }
 }
 .rs-breadcrumbs__list {
@@ -1010,23 +1008,12 @@ textarea.rs-input {
       flex-wrap: wrap;
 }
 .rs-breadcrumbs__item {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
+  font-weight: 300;
+  font-size: 16px;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: #c4c4c4;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-@media (max-width: 1439.98px) {
-  .rs-breadcrumbs__item {
-    font-size: 18px;
-  }
-}
-@media (max-width: 1169.98px) {
-  .rs-breadcrumbs__item {
-    font-size: 16px;
-  }
 }
 @media (max-width: 991.98px) {
   .rs-breadcrumbs__item {
@@ -1042,11 +1029,11 @@ textarea.rs-input {
           align-items: center;
 }
 .rs-breadcrumbs__link:after {
-  content: "—";
+  content: "/";
   display: block;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  margin: 0px 5px 4px;
+  margin: 0px 10px 0px;
 }
 
 body::after {
@@ -1200,6 +1187,102 @@ body::after {
   .popup__content h1 {
     font-size: 20px;
   }
+}
+
+.spollers__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.spollers__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #774653;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+}
+.spollers__title._spoller-active i:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+      -ms-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
+}
+.spollers__icon {
+  position: relative;
+  max-width: 34px;
+  max-height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 100%;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.spollers__icon::before, .spollers__icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+      -ms-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
+  width: 1px;
+  height: 100%;
+  background-color: #ae9cab;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.spollers__icon::before {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      -ms-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+}
+.spollers__body {
+  margin-top: 20px;
+}
+.spollers__body ul li {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #727272;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.spollers__body ul li::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 7px;
+  height: 6px;
+  background-image: url("../../img/icons/marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 10px 10px 0px 0px;
+}
+.spollers__body ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .pagging {

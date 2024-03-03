@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="css/rs-style.css" />
+
+	<title>RC Collection - Описание коллекции - R Class</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css" />
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header">
+				<div class="rs-header__main">
+					<div class="rs-header__container">
+						<div class="rs-header__wrapper">
+							<div class="rs-header__logo">
+								<a href="./home.html">
+									<img src="./img/header/header_logo_light.svg" alt="">
+									<img src="./img/header/header_logo_red.svg" alt="">
+								</a>
+							</div>
+
+							<div class="rs-header__menu menu">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+								<div class="menu__block">
+									<nav class="menu__body">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="./home.html">Главная</a>
+											</li>
+
+											<li class="menu__item menu__dropdown">
+												<a href="#">Каталог</a>
+
+												<ul class="menu__dropdown-list">
+													<li class="menu-item menu__block-list">
+														<a href="#">RC Collection</a>
+
+														<ul class="menu__dropdown-list">
+															<li class="menu-item">
+																<a href="#">RC</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">CL</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">AD</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">CRC</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="menu-item menu__dropdown">
+														<a href="#">Балетки</a>
+
+														<ul class="menu__dropdown-list">
+															<li class="menu-item menu__block-list">
+																<a href="#">RC Collection</a>
+
+																<ul class="menu__dropdown-list">
+																	<li class="menu-item">
+																		<a href="#">RC</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">CL</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">AD</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">CRC</a>
+																	</li>
+																</ul>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Балетки</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Аксессуары</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Винтажные коллекции</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="menu-item">
+														<a href="#">Аксессуары</a>
+													</li>
+
+													<li class="menu-item">
+														<a href="#">Винтажные коллекции</a>
+													</li>
+												</ul>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Где купить</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">О компании</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Блог</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Семья R-Class</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Справочник</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Контакты</a>
+											</li>
+										</ul>
+									</nav>
+
+									<ul class="menu__contact menu__list">
+										<li class="menu__item">
+											<a href="tel:74955105725">+7 (495) 510-57-25</a>
+										</li>
+
+										<li class="menu__item">
+											<a href="mailto:info@r-class.ru">info@r-class.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-header__action">
+								<a href="#" class="rs-header__search-link" id="search-show">
+									<svg viewBox="0 0 26 27" fill="none">
+										<circle cx="11.1121" cy="11.5496" r="10.5496" stroke="white"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M18.365 19.4062L24.9585 25.9998" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+
+								<div class="rs-header__language">
+									<div class="rs-header__language_btn">
+										<svg viewBox="0 0 27 27" fill="none">
+											<rect x="1" y="1" width="25" height="25" rx="12.5" stroke="white" />
+											<path
+												d="M17.25 1.625C19.5642 4.48407 21 9.09323 21 13.5C21 17.9068 19.5642 22.5159 17.25 25.375"
+												stroke="white" />
+											<path
+												d="M9.75 1.625C7.4358 4.48407 6 9.09323 6 13.5C6 17.9068 7.4358 22.5159 9.75 25.375"
+												stroke="white" />
+											<path d="M13.5 1V26" stroke="white" stroke-linecap="round" />
+											<path d="M26 13.5L1 13.5" stroke="white" stroke-linecap="round" />
+										</svg>
+									</div>
+									<ul class="rs-header__language_list">
+										<li class="menu__item"><a href="#" class="_active">Ru</a></li>
+										<li class="menu__item"><a href="#">En</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="rs-search" id="search-modal">
+				<div class="rs-search__overlay">
+					<div class="cursor">
+						<div class="cursor__point-zero">
+							<div class="cursor__wrapper">
+								<div class="cursor__circle">
+									<svg viewBox="0 0 19 19" fill="none">
+										<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rs-search__block">
+					<div class="rs-search__wrapper">
+						<form action="#" class="rs-search__form">
+							<div class="rs-search__line">
+								<button class="rs-search__btn rs-search__submit" type="submit">
+									<svg viewBox="0 0 26 27" fill="none">
+										<circle cx="11.1121" cy="11.5496" r="10.5496" stroke="white"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M18.365 19.4062L24.9585 25.9998" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+								<input type="text" placeholder="Напишите, что хотите найти" class="rs-search__input"
+									required>
+								<button class="rs-search__btn rs-search__clear" type="button">
+									<svg viewBox="0 0 19 19" fill="none">
+										<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="rs-breadcrumbs">
+				<div class="rs-breadcrumbs__container">
+					<nav class="rs-breadcrumbs__navigation">
+						<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="rs-breadcrumbs__list">
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="home.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">Главная</span>
+								</a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="catalog.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">Каталог</span>
+								</a>
+								<meta itemprop="position" content="2">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope=""
+								itemtype="http://schema.org/ListItem">
+								<span itemprop="name">RC Collection</span>
+								<meta itemprop="position" content="3">
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<link rel="stylesheet" href="css/rs-catalog.css">
+			<script src="js/rs-catalog.js" defer></script>
+			<section class="rs-catalog">
+				<div class="rs-catalog__container">
+					<div class="rs-catalog__wrapper">
+						<div class="rs-catalog__sidebar">
+
+							<button type="button" class="rs-catalog__filter-btn">
+								<span>Категории и фильтры</span>
+								<svg viewBox="0 0 24 24" fill="none">
+									<path
+										d="M3 4.6C3 4.03995 3 3.75992 3.10899 3.54601C3.20487 3.35785 3.35785 3.20487 3.54601 3.10899C3.75992 3 4.03995 3 4.6 3H19.4C19.9601 3 20.2401 3 20.454 3.10899C20.6422 3.20487 20.7951 3.35785 20.891 3.54601C21 3.75992 21 4.03995 21 4.6V6.33726C21 6.58185 21 6.70414 20.9724 6.81923C20.9479 6.92127 20.9075 7.01881 20.8526 7.10828C20.7908 7.2092 20.7043 7.29568 20.5314 7.46863L14.4686 13.5314C14.2957 13.7043 14.2092 13.7908 14.1474 13.8917C14.0925 13.9812 14.0521 14.0787 14.0276 14.1808C14 14.2959 14 14.4182 14 14.6627V17L10 21V14.6627C10 14.4182 10 14.2959 9.97237 14.1808C9.94787 14.0787 9.90747 13.9812 9.85264 13.8917C9.7908 13.7908 9.70432 13.7043 9.53137 13.5314L3.46863 7.46863C3.29568 7.29568 3.2092 7.2092 3.14736 7.10828C3.09253 7.01881 3.05213 6.92127 3.02763 6.81923C3 6.70414 3 6.58185 3 6.33726V4.6Z"
+										stroke="#C80151" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+
+							<div class="rs-catalog__filters filter">
+								<div class="filter__head">
+									<h2>Категории и фильтры</h2>
+									<button class="filter__close">
+										<svg viewBox="0 0 19 19" fill="none">
+											<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+
+								<div class="filter__block">
+									<form method="POST" action="#">
+										<div class="filter__wrapper">
+											<div class="filter__list">
+
+												<div data-spollers="991.98, max" class="filter__list">
+													<div class="filter__item filter__checkbox">
+														<button type="button" data-spoller
+															class="filter__title">Размер</button>
+														<div class="filter__body">
+															<ul class="filter__nav">
+																<li>
+																	<label>
+																		<input type="checkbox" name="size210">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">210</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size215">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">215</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size220">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">220</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size225">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">225</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size210">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">210</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size215">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">215</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size220">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">220</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="size225">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">225</span>
+																	</label>
+																</li>
+															</ul>
+															<button type="button" class="filter__showmore">
+																<span>Развернуть</span>
+																<span>Скрыть</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="filter__item filter__checkbox">
+														<button type="button" data-spoller
+															class="filter__title">Полнота</button>
+														<div class="filter__body">
+															<ul class="filter__nav">
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW1">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w1</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW2">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w2</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW3">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w3</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW4">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w4</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW1">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w1</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW2">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w2</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW3">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w3</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="completenessW4">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">w4</span>
+																	</label>
+																</li>
+															</ul>
+															<button type="button" class="filter__showmore">
+																<span>Развернуть</span>
+																<span>Скрыть</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="filter__item filter__checkbox">
+														<button type="button" data-spoller
+															class="filter__title">Жесткость</button>
+														<div class="filter__body">
+															<ul class="filter__nav">
+																<li>
+																	<label>
+																		<input type="checkbox" name="rigidityH">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">H</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="rigidityM">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">M</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="rigidityS">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">S</span>
+																	</label>
+																</li>
+															</ul>
+															<button type="button" class="filter__showmore">
+																<span>Развернуть</span>
+																<span>Скрыть</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="filter__item filter__checkbox">
+														<button type="button" data-spoller
+															class="filter__title">Жесткость</button>
+														<div class="filter__body">
+															<ul class="filter__nav">
+																<li>
+																	<label>
+																		<input type="checkbox" name="materialAtlas">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">Атлас</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="materialKirza">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">Кирза</span>
+																	</label>
+																</li>
+															</ul>
+															<button type="button" class="filter__showmore">
+																<span>Развернуть</span>
+																<span>Скрыть</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="filter__item filter__checkbox">
+														<button type="button" data-spoller
+															class="filter__title">Цвет</button>
+														<div class="filter__body">
+															<ul class="filter__nav">
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorPing">
+																		<span class="checkbox"></span>
+																		<span
+																			class="checkbox-label icon-black">Розовый</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorWhite">
+																		<span class="checkbox"></span>
+																		<span
+																			class="checkbox-label icon-black">Белый</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorBlack">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">Чёрный</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorGreen">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">Зелёный</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorPing">
+																		<span class="checkbox"></span>
+																		<span
+																			class="checkbox-label icon-black">Розовый</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorWhite">
+																		<span class="checkbox"></span>
+																		<span
+																			class="checkbox-label icon-black">Белый</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorBlack">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">Чёрный</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="colorGreen">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">Зелёный</span>
+																	</label>
+																</li>
+															</ul>
+															<button type="button" class="filter__showmore">
+																<span>Развернуть</span>
+																<span>Скрыть</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="filter__item filter__checkbox">
+														<button type="button" data-spoller
+															class="filter__title">Фасон</button>
+														<div class="filter__body">
+															<ul class="filter__nav">
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC1">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC1</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC2">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC2</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC3">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC3</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC5">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC5</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC1">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC1</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC2">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC2</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC3">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC3</span>
+																	</label>
+																</li>
+																<li>
+																	<label>
+																		<input type="checkbox" name="styleRC5">
+																		<span class="checkbox"></span>
+																		<span class="checkbox-label">RC5</span>
+																	</label>
+																</li>
+															</ul>
+															<button type="button" class="filter__showmore">
+																<span>Развернуть</span>
+																<span>Скрыть</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="filter__control">
+												<a href="#" class="rs-btn _btn-second  filter__reset">Сбросить
+													фильтры</a>
+											</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-catalog__content">
+							<div class="rs-catalog__banner">
+								<div class="rs-catalog__banner_bg">
+									<img src="./img/blocks/catalog/catalog-banner_img.jpg" alt="">
+									<img src="./img/blocks/catalog/catalog-banner_img_min.jpg" alt="">
+								</div>
+								<div class="rs-catalog__banner_desc">
+									<h2>Жизнь. Балет. Пуанты</h2>
+								</div>
+							</div>
+							<p>Путь к вершинам балетного искусства начинается с самого детства. В начале творческого
+								пути очень важно подобрать пуанты, которые будут поддерживать ногу и помогут правильному
+								формированию стопы. Пуанты R-Class производятся только из натуральных материалов.
+								Специально для юных балерин мы создали детскую CRC коллекцию.</p>
+
+							<div class="rs-catalog__block">
+								<div class="rs-catalog__head">
+									<div class="rs-catalog__status">
+										<div class="all_count">Показано товаров: <span class="count">9</span></div>
+									</div>
+
+									<div class="rs-catalog__actions">
+										<div class="rs-catalog__sortings">
+											<form action="#">
+												<select name="form[]" data-class-modif="one-select"
+													class="custom-select" data-pseudo-label="Сортировать по:">
+													<option value="popularity">
+														По популярности
+													</option>
+													<option value="price" selected data-class="_select-selected">
+														По цене
+													</option>
+													<option value="date">
+														По новизне
+													</option>
+												</select>
+												<input type="hidden" name="paged" value="1">
+											</form>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-catalog__products">
+									<div class="rs-catalog__products_list">
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+
+										<div class="product">
+											<a href="#">
+												<div class="product__item">
+													<div class="product__img">
+														<img src="./img/blocks/product/product_1.png" alt="">
+													</div>
+													<div class="product__desc">
+														<h4>RC10</h4>
+														<p>Базовая модель фасона RC1</p>
+													</div>
+												</div>
+												<div class="product__more">
+													<span class="rs-btn _btn-second">Подробнее</span>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="pagging">
+										<button type="button" class="pagging__arrow pagging__arrow_start">
+											<svg viewBox="0 0 6 9" fill="none">
+												<path
+													d="M4.91419 4.78377C5.01216 4.68592 5.06726 4.55318 5.06738 4.41472V4.15012C5.06578 4.01196 5.0109 3.87975 4.91419 3.78107L1.3351 0.208942C1.26973 0.143031 1.18074 0.105957 1.08791 0.105957C0.995078 0.105957 0.90609 0.143031 0.840717 0.208942L0.346329 0.70333C0.280831 0.767505 0.243921 0.855344 0.243921 0.947042C0.243921 1.03874 0.280831 1.12658 0.346329 1.19075L3.44496 4.28242L0.346329 7.37408C0.280418 7.43945 0.243344 7.52844 0.243344 7.62127C0.243344 7.71411 0.280418 7.8031 0.346329 7.86847L0.840717 8.35589C0.90609 8.4218 0.995078 8.45888 1.08791 8.45888C1.18074 8.45888 1.26973 8.4218 1.3351 8.35589L4.91419 4.78377Z"
+													fill="#AE9CAB" />
+											</svg>
+										</button>
+										<ul class="pagging__list">
+											<li class="pagging__item">
+												<a href="#" class="pagging__link _active">1</a>
+											</li>
+											<li class="pagging__item">
+												<a href="#" class="pagging__link">2</a>
+											</li>
+											<li class="pagging__item">
+												<a href="#" class="pagging__link">3</a>
+											</li>
+											<li class="pagging__item">
+												<span class="pagging__more">...</span>
+											</li>
+											<li class="pagging__item">
+												<a href="#" class="pagging__link">24</a>
+											</li>
+										</ul>
+										<button type="button" class="pagging__arrow pagging__arrow_right">
+											<svg viewBox="0 0 6 9" fill="none">
+												<path
+													d="M4.91419 4.78377C5.01216 4.68592 5.06726 4.55318 5.06738 4.41472V4.15012C5.06578 4.01196 5.0109 3.87975 4.91419 3.78107L1.3351 0.208942C1.26973 0.143031 1.18074 0.105957 1.08791 0.105957C0.995078 0.105957 0.90609 0.143031 0.840717 0.208942L0.346329 0.70333C0.280831 0.767505 0.243921 0.855344 0.243921 0.947042C0.243921 1.03874 0.280831 1.12658 0.346329 1.19075L3.44496 4.28242L0.346329 7.37408C0.280418 7.43945 0.243344 7.52844 0.243344 7.62127C0.243344 7.71411 0.280418 7.8031 0.346329 7.86847L0.840717 8.35589C0.90609 8.4218 0.995078 8.45888 1.08791 8.45888C1.18074 8.45888 1.26973 8.4218 1.3351 8.35589L4.91419 4.78377Z"
+													fill="#AE9CAB" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css" />
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+					<img src="./img/footer/footer_big_logo.svg" alt="">
+				</div>
+
+				<div class="rs-footer__main" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+					<div class="rs-footer__container">
+						<div class="rs-footer__wrapper">
+							<div class="rs-footer__block">
+								<div class="rs-footer__logo">
+									<a href="./home.html">
+										<img src="./img/header/header_logo_red.svg" alt="">
+									</a>
+								</div>
+
+								<div class="rs-footer__contact">
+									<ul>
+										<li><a href="#"><img src="./img/icons/youtube.svg" alt=""></a></li>
+										<li><a href="#"><img src="./img/icons/vk.svg" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-footer__info">
+								<div class="rs-footer__info-list">
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="tel:74955105725">+7 (495) 510-57-25</a></li>
+											<li><a href="mailto:info@r-class.ru">info@r-class.ru</a></li>
+											<li><span>Пн-Пт: 10:00 - 18:00</span></li>
+											<li><span>143900, г. Балашиха, ул. Советская, д. 36</span></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">RC Collection</a></li>
+											<li><a href="#">Балетки</a></li>
+											<li><a href="#">Аксессуары</a></li>
+											<li><a href="#">Винтажные коллекции</a></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">Где купить?</a></li>
+											<li><a href="#">Блог</a></li>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Семья R-class</a></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Справочник</a></li>
+											<li><a href="#">Оптовым клиентам</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="rs-footer__bottom">
+									<div class="rs-footer__copyright">© ООО «Р-Класс». Все права защищены.</div>
+									<div class="rs-footer__dev"><a href="#">Разработано в Россайт</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 500, easing: "ease-out-quart", once: true });</script>
+	<script src="js/rs-sliders-init.js"></script>
+	<script src="js/rs-script.js"></script>
+
+</body>
+
+</html>

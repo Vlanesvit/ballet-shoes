@@ -49,7 +49,7 @@
 	// .rs-product-slider__slide
 	&__slide {
 		@media (min-width: 1439.98px) {
-			flex: 1 1 25%;
+			flex: 1 1 calc(25% - 15px);
 
 			.product {
 				max-width: 364px;

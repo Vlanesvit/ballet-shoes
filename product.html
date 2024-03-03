@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="css/rs-style.css" />
+
+	<title>RC10 - Особенности - R Class</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css" />
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header">
+				<div class="rs-header__main">
+					<div class="rs-header__container">
+						<div class="rs-header__wrapper">
+							<div class="rs-header__logo">
+								<a href="./home.html">
+									<img src="./img/header/header_logo_light.svg" alt="">
+									<img src="./img/header/header_logo_red.svg" alt="">
+								</a>
+							</div>
+
+							<div class="rs-header__menu menu">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+								<div class="menu__block">
+									<nav class="menu__body">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="./home.html">Главная</a>
+											</li>
+
+											<li class="menu__item menu__dropdown">
+												<a href="#">Каталог</a>
+
+												<ul class="menu__dropdown-list">
+													<li class="menu-item menu__block-list">
+														<a href="#">RC Collection</a>
+
+														<ul class="menu__dropdown-list">
+															<li class="menu-item">
+																<a href="#">RC</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">CL</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">AD</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">CRC</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="menu-item menu__dropdown">
+														<a href="#">Балетки</a>
+
+														<ul class="menu__dropdown-list">
+															<li class="menu-item menu__block-list">
+																<a href="#">RC Collection</a>
+
+																<ul class="menu__dropdown-list">
+																	<li class="menu-item">
+																		<a href="#">RC</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">CL</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">AD</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">CRC</a>
+																	</li>
+																</ul>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Балетки</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Аксессуары</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Винтажные коллекции</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="menu-item">
+														<a href="#">Аксессуары</a>
+													</li>
+
+													<li class="menu-item">
+														<a href="#">Винтажные коллекции</a>
+													</li>
+												</ul>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Где купить</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">О компании</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Блог</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Семья R-Class</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Справочник</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Контакты</a>
+											</li>
+										</ul>
+									</nav>
+
+									<ul class="menu__contact menu__list">
+										<li class="menu__item">
+											<a href="tel:74955105725">+7 (495) 510-57-25</a>
+										</li>
+
+										<li class="menu__item">
+											<a href="mailto:info@r-class.ru">info@r-class.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-header__action">
+								<a href="#" class="rs-header__search-link" id="search-show">
+									<svg viewBox="0 0 26 27" fill="none">
+										<circle cx="11.1121" cy="11.5496" r="10.5496" stroke="white"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M18.365 19.4062L24.9585 25.9998" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+
+								<div class="rs-header__language">
+									<div class="rs-header__language_btn">
+										<svg viewBox="0 0 27 27" fill="none">
+											<rect x="1" y="1" width="25" height="25" rx="12.5" stroke="white" />
+											<path
+												d="M17.25 1.625C19.5642 4.48407 21 9.09323 21 13.5C21 17.9068 19.5642 22.5159 17.25 25.375"
+												stroke="white" />
+											<path
+												d="M9.75 1.625C7.4358 4.48407 6 9.09323 6 13.5C6 17.9068 7.4358 22.5159 9.75 25.375"
+												stroke="white" />
+											<path d="M13.5 1V26" stroke="white" stroke-linecap="round" />
+											<path d="M26 13.5L1 13.5" stroke="white" stroke-linecap="round" />
+										</svg>
+									</div>
+									<ul class="rs-header__language_list">
+										<li class="menu__item"><a href="#" class="_active">Ru</a></li>
+										<li class="menu__item"><a href="#">En</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="rs-search" id="search-modal">
+				<div class="rs-search__overlay">
+					<div class="cursor">
+						<div class="cursor__point-zero">
+							<div class="cursor__wrapper">
+								<div class="cursor__circle">
+									<svg viewBox="0 0 19 19" fill="none">
+										<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rs-search__block">
+					<div class="rs-search__wrapper">
+						<form action="#" class="rs-search__form">
+							<div class="rs-search__line">
+								<button class="rs-search__btn rs-search__submit" type="submit">
+									<svg viewBox="0 0 26 27" fill="none">
+										<circle cx="11.1121" cy="11.5496" r="10.5496" stroke="white"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M18.365 19.4062L24.9585 25.9998" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+								<input type="text" placeholder="Напишите, что хотите найти" class="rs-search__input"
+									required>
+								<button class="rs-search__btn rs-search__clear" type="button">
+									<svg viewBox="0 0 19 19" fill="none">
+										<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="rs-breadcrumbs">
+				<div class="rs-breadcrumbs__container">
+					<nav class="rs-breadcrumbs__navigation">
+						<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="rs-breadcrumbs__list">
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="home.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">Главная</span>
+								</a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="catalog.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">Каталог</span>
+								</a>
+								<meta itemprop="position" content="2">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="catalog.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">RC</span>
+								</a>
+								<meta itemprop="position" content="3">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope=""
+								itemtype="http://schema.org/ListItem">
+								<span itemprop="name">RC 10</span>
+								<meta itemprop="position" content="4">
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<link rel="stylesheet" href="css/rs-product.css">
+			<script src="js/rs-product.js" defer></script>
+			<section class="rs-product">
+				<div class="rs-product__container">
+					<div class="rs-product__wrapper">
+						<div class="rs-product__pictures">
+							<div class="rs-product__picture threesixty" data-dir="rc10">
+							</div>
+							<div class="rs-product__picture">
+								<a data-fancybox="gallery" href="./img/blocks/product/product__img-2.jpg">
+									<img src="./img/blocks/product/product__img-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="rs-product__picture">
+								<a data-fancybox="gallery" href="./img/blocks/product/product__img-3.jpg">
+									<img src="./img/blocks/product/product__img-3.jpg" alt="">
+								</a>
+							</div>
+							<div class="rs-product__picture">
+								<a data-fancybox="gallery" href="./img/blocks/product/product__img-4.jpg">
+									<img src="./img/blocks/product/product__img-4.jpg" alt="">
+								</a>
+							</div>
+							<div class="rs-product__picture">
+								<a data-fancybox="gallery" href="./img/blocks/product/product__img-5.jpg">
+									<img src="./img/blocks/product/product__img-5.jpg" alt="">
+								</a>
+							</div>
+							<div class="rs-product__picture">
+								<a data-fancybox="gallery" href="./img/blocks/product/product__img-6.jpg">
+									<img src="./img/blocks/product/product__img-6.jpg" alt="">
+								</a>
+							</div>
+							<div class="rs-product__picture">
+								<a data-fancybox="gallery" href="./img/blocks/product/product__img-7.jpg">
+									<img src="./img/blocks/product/product__img-7.jpg" alt="">
+								</a>
+							</div>
+						</div>
+
+						<div class="rs-product__desc rs-product__fixed">
+							<div class="rs-product__desc_block">
+								<div class="rs-product__desc_swipe" id="swipe-menu-btn"></div>
+
+								<div class="rs-product__desc_head">
+									<h2>RC 10</h2>
+									<p>Базовая модель фасона RC 1</p>
+								</div>
+
+								<div class="rs-product__desc_body" id="swipe-menu-body" hidden>
+									<div data-spollers data-one-spoller class="spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">
+												<span>Особенности</span>
+												<i class="spollers__icon"></i>
+											</button>
+											<div class="spollers__body">
+												<ul>
+													<li>Зауженный пятак</li>
+													<li>Средний подъем</li>
+													<li>Средний свод</li>
+													<li>Зауженная пятка</li>
+													<li>Средняя коробочка</li>
+													<li>U-вырез со шнурком</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">
+												<span>Описание</span>
+												<i class="spollers__icon"></i>
+											</button>
+											<div class="spollers__body">
+												<ul>
+													<li>Зауженный пятак</li>
+													<li>Средний подъем</li>
+													<li>Средний свод</li>
+													<li>Зауженная пятка</li>
+													<li>Средняя коробочка</li>
+													<li>U-вырез со шнурком</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">
+												<span>На заказ (маркировка в виде стикера)</span>
+												<i class="spollers__icon"></i>
+											</button>
+											<div class="spollers__body">
+												<ul>
+													<li>Зауженный пятак</li>
+													<li>Средний подъем</li>
+													<li>Средний свод</li>
+													<li>Зауженная пятка</li>
+													<li>Средняя коробочка</li>
+													<li>U-вырез со шнурком</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">
+												<span>Характеристики</span>
+												<i class="spollers__icon"></i>
+											</button>
+											<div class="spollers__body">
+												<ul>
+													<li>Зауженный пятак</li>
+													<li>Средний подъем</li>
+													<li>Средний свод</li>
+													<li>Зауженная пятка</li>
+													<li>Средняя коробочка</li>
+													<li>U-вырез со шнурком</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-product__desc_action">
+									<a href="#" class="rs-btn _btn-second">Где купить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-product-slider.css">
+			<section class="rs-product-slider" data-aos="fade-up" data-aos-delay="100">
+				<div class="rs-product-slider__container">
+					<h2>Эстетика и комфорт в каждой модели</h2>
+
+					<div class="rs-product-slider__slider swiper">
+						<div class="rs-product-slider__swiper swiper-wrapper">
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product">
+									<a href="#">
+										<div class="product__item">
+											<div class="product__img">
+												<img src="./img/blocks/product/product_1.png" alt="">
+											</div>
+											<div class="product__desc">
+												<h4>RC10</h4>
+												<p>Базовая модель фасона RC1</p>
+											</div>
+										</div>
+										<div class="product__more">
+											<span class="rs-btn _btn-second">Подробнее</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="rs-product-slider__action swiper-action">
+							<div class="rs-product-slider__navigation swiper-action__navigation">
+								<div class="rs-product-slider__button-prev swiper-button-prev">
+									<svg viewBox="0 0 27 14" fill="none">
+										<path
+											d="M6.41666 12.7617L1.92641 8.27147C0.517543 6.88672 0.517543 6.88672 1.92641 5.50197L6.41666 1.01172M1.04138 6.88671L26 6.88671"
+											stroke="#B0244A" stroke-linecap="round" />
+									</svg>
+								</div>
+								<div class="rs-product-slider__button-next swiper-button-next">
+									<svg viewBox="0 0 27 14" fill="none">
+										<path
+											d="M20.4535 12.5952L24.9437 8.10497C26.3526 6.72022 26.3526 6.72022 24.9437 5.33546L20.4535 0.845215M25.8287 6.72021L0.870117 6.72021"
+											stroke="#B0244A" stroke-linecap="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="rs-product-slider__pagination swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css" />
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+					<img src="./img/footer/footer_big_logo.svg" alt="">
+				</div>
+
+				<div class="rs-footer__main" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+					<div class="rs-footer__container">
+						<div class="rs-footer__wrapper">
+							<div class="rs-footer__block">
+								<div class="rs-footer__logo">
+									<a href="./home.html">
+										<img src="./img/header/header_logo_red.svg" alt="">
+									</a>
+								</div>
+
+								<div class="rs-footer__contact">
+									<ul>
+										<li><a href="#"><img src="./img/icons/youtube.svg" alt=""></a></li>
+										<li><a href="#"><img src="./img/icons/vk.svg" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-footer__info">
+								<div class="rs-footer__info-list">
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="tel:74955105725">+7 (495) 510-57-25</a></li>
+											<li><a href="mailto:info@r-class.ru">info@r-class.ru</a></li>
+											<li><span>Пн-Пт: 10:00 - 18:00</span></li>
+											<li><span>143900, г. Балашиха, ул. Советская, д. 36</span></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">RC Collection</a></li>
+											<li><a href="#">Балетки</a></li>
+											<li><a href="#">Аксессуары</a></li>
+											<li><a href="#">Винтажные коллекции</a></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">Где купить?</a></li>
+											<li><a href="#">Блог</a></li>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Семья R-class</a></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Справочник</a></li>
+											<li><a href="#">Оптовым клиентам</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="rs-footer__bottom">
+									<div class="rs-footer__copyright">© ООО «Р-Класс». Все права защищены.</div>
+									<div class="rs-footer__dev"><a href="#">Разработано в Россайт</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 500, easing: "ease-out-quart", once: true });</script>
+	<script src="js/rs-sliders-init.js"></script>
+	<script src="js/rs-script.js"></script>
+
+</body>
+
+</html>

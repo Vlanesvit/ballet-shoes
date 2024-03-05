@@ -49,6 +49,7 @@
   opacity: 1;
 }
 .rs-slider__slider {
+  width: 100%;
   height: 0%;
   -webkit-transition: height 1s cubic-bezier(0.48, 0, 0.48, 1);
   transition: height 1s cubic-bezier(0.48, 0, 0.48, 1);

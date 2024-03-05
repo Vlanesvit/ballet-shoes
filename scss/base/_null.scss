@@ -15,7 +15,7 @@
 
 	&::-webkit-scrollbar-thumb {
 		cursor: pointer;
-		background: #0c75af;
+		background: $accentColor;
 		transition: 0.2s ease-in-out;
 		border-radius: 3px;
 	}
@@ -25,7 +25,7 @@
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-		scrollbar-color: $accentColor #0c75af;
+		scrollbar-color: $accentColor $accentColor;
 		scrollbar-width: thin;
 
 		&::-webkit-scrollbar {

@@ -1,0 +1,75 @@
+.rs-error-block {
+	margin-top: 35px;
+
+	@media (max-width: 991.98px) {
+		margin-top: 20px;
+	}
+
+	// .rs-error-block__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	// .rs-error-block__img
+	&__img {
+		img {
+			max-width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	// .rs-error-block__description
+	&__description {
+		margin-top: 28px;
+
+		h1 {
+			font-family: "Cormorant Garamond", sans-serif;
+			font-weight: 300;
+			font-size: 80px;
+			line-height: 110%;
+			color: #6d5b6a;
+
+			@media (max-width: 1439.98px) {
+				font-size: 65px;
+			}
+
+			@media (max-width: 1169.98px) {
+				font-size: 50px;
+			}
+
+			@media (max-width: 991.98px) {
+				font-size: 30px;
+			}
+		}
+
+		h6 {
+			margin-top: 5px;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 160%;
+			letter-spacing: 0.03em;
+			text-align: center;
+			color: #727272;
+
+			@media (max-width: 1439.98px) {
+				font-size: 18px;
+			}
+
+			@media (max-width: 1169.98px) {
+				font-size: 16px;
+			}
+
+			@media (max-width: 991.98px) {
+				font-size: 13px;
+			}
+		}
+
+		.rs-btn {
+			margin: 20px auto 0px;
+		}
+	}
+}

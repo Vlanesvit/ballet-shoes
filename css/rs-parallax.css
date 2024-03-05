@@ -1,0 +1,66 @@
+.rs-parallax {
+  padding: 57px 0px;
+}
+@media (max-width: 991.98px) {
+  .rs-parallax {
+    padding: 30px 0px;
+  }
+}
+.rs-parallax__bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.rs-parallax__content {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.rs-parallax__buttons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .rs-parallax__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-parallax__buttons a {
+    width: 100%;
+  }
+}
+.rs-parallax__buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+@media (max-width: 991.98px) {
+  .rs-parallax__buttons a:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-parallax__buttons a:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}

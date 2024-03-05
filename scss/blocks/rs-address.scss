@@ -1,0 +1,271 @@
+.rs-address {
+	padding-top: 80px;
+
+	@media (max-width: 1439.98px) {
+		padding-top: 60px;
+	}
+
+	@media (max-width: 1169.98px) {
+		padding-top: 40px;
+	}
+
+	@media (max-width: 991.98px) {
+		padding-top: 28px;
+	}
+
+	// .rs-address__container
+	&__container {
+	}
+
+	// .rs-address__wrapper
+	&__wrapper {
+		@media (min-width: 991.98px) {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 30px;
+
+			@media (max-width: 1439.98px) {
+				gap: 20px;
+			}
+		}
+	}
+
+	// .rs-address__shops
+	&__shops {
+		@media (min-width: 991.98px) {
+			grid-column: 1/2;
+			padding-right: 33px;
+			margin-top: 3px;
+
+			@media (max-width: 1699.98px) {
+				padding-right: 0px;
+			}
+		}
+	}
+
+	// .rs-address__head
+	&__head {
+		margin-bottom: 38px;
+
+		@media (max-width: 1439.98px) {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 1169.98px) {
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .rs-address__search
+	&__search {
+		.rs-input {
+			padding-right: 40px;
+		}
+	}
+
+	// .rs-address__list
+	&__list {
+		margin-top: 64px;
+		max-height: 670px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		padding-right: 23px;
+		scrollbar-width: thin;
+
+		@media (max-width: 1439.98px) {
+			padding-right: 15px;
+			margin-top: 40px;
+		}
+
+		@media (max-width: 1169.98px) {
+			margin-top: 30px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-top: 20px;
+		}
+
+		&::-webkit-scrollbar {
+			width: 1px;
+		}
+	}
+
+	// .rs-address__item
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 34px;
+
+			@media (max-width: 1439.98px) {
+				margin-bottom: 30px;
+			}
+
+			@media (max-width: 1169.98px) {
+				margin-bottom: 25px;
+			}
+
+			@media (max-width: 991.98px) {
+				margin-bottom: 20px;
+			}
+		}
+
+		// .rs-address__item_head
+		&_head {
+			border-bottom: 1px solid #d9d9d9;
+			padding-bottom: 18px;
+
+			@media (max-width: 1439.98px) {
+				padding-bottom: 15px;
+			}
+
+			@media (max-width: 1169.98px) {
+				padding-bottom: 10px;
+			}
+
+			h5 {
+				font-family: "Cormorant Garamond", sans-serif;
+				font-weight: 500;
+				font-size: 22px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+				color: #774653;
+
+				@media (max-width: 1439.98px) {
+					font-size: 18px;
+				}
+
+				@media (max-width: 1169.98px) {
+					font-size: 16px;
+				}
+			}
+		}
+
+		// .rs-address__item_body
+		&_body {
+			margin-top: 30px;
+
+			@media (max-width: 1439.98px) {
+				margin-top: 20px;
+			}
+
+			@media (max-width: 1169.98px) {
+				margin-top: 15px;
+			}
+
+			@media (max-width: 991.98px) {
+				margin-top: 10px;
+			}
+		}
+
+		// .rs-address__item_city
+		&_city {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.03em;
+			color: #c80151;
+			display: flex;
+			align-items: center;
+
+			@media (max-width: 1169.98px) {
+				font-size: 13px;
+			}
+
+			svg {
+				margin-right: 10px;
+				width: 20px;
+				height: 20px;
+
+				@media (max-width: 1169.98px) {
+					margin-right: 5px;
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+
+		// .rs-address__item_details
+		&_details {
+			margin-top: 15px;
+			padding: 20px;
+			background: #f3e1e2;
+			border-radius: 10px;
+
+			@media (max-width: 1169.98px) {
+				padding: 15px;
+				margin-top: 10px;
+			}
+
+			h6 {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 150%;
+				letter-spacing: 0.03em;
+				color: #774653;
+				margin-bottom: 5px;
+
+				@media (max-width: 1169.98px) {
+					font-size: 13px;
+				}
+			}
+
+			ul {
+				li {
+					font-weight: 300;
+					font-size: 16px;
+					line-height: 150%;
+					letter-spacing: 0.03em;
+					color: #727272;
+
+					@media (max-width: 1169.98px) {
+						font-size: 13px;
+					}
+
+					&:not(:last-child) {
+						margin-bottom: 5px;
+					}
+
+					span {
+						color: #774653;
+					}
+				}
+			}
+		}
+	}
+
+	// .rs-address__map
+	&__map {
+		position: relative;
+
+		@media (min-width: 991.98px) {
+			grid-column: 2/5;
+			padding-left: 32px;
+
+			@media (max-width: 1699.98px) {
+				padding-left: 0px;
+			}
+		}
+
+		@media (max-width: 1169.98px) {
+			height: 400px;
+			margin-top: 30px;
+		}
+
+		.map {
+			width: 100%;
+			height: 100%;
+			border-radius: 30px;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			@media (max-width: 1169.98px) {
+				border-radius: 20px;
+			}
+		}
+	}
+}

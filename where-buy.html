@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="css/rs-style.css" />
+
+	<title>Где купить - R Class</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css" />
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header">
+				<div class="rs-header__main">
+					<div class="rs-header__container">
+						<div class="rs-header__wrapper">
+							<div class="rs-header__logo">
+								<a href="./home.html">
+									<img src="./img/header/header_logo_light.svg" alt="">
+									<img src="./img/header/header_logo_red.svg" alt="">
+								</a>
+							</div>
+
+							<div class="rs-header__menu menu">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+								<div class="menu__block">
+									<nav class="menu__body">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="./home.html">Главная</a>
+											</li>
+
+											<li class="menu__item menu__dropdown">
+												<a href="#">Каталог</a>
+
+												<ul class="menu__dropdown-list">
+													<li class="menu-item menu__block-list">
+														<a href="#">RC Collection</a>
+
+														<ul class="menu__dropdown-list">
+															<li class="menu-item">
+																<a href="#">RC</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">CL</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">AD</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">CRC</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="menu-item menu__dropdown">
+														<a href="#">Балетки</a>
+
+														<ul class="menu__dropdown-list">
+															<li class="menu-item menu__block-list">
+																<a href="#">RC Collection</a>
+
+																<ul class="menu__dropdown-list">
+																	<li class="menu-item">
+																		<a href="#">RC</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">CL</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">AD</a>
+																	</li>
+
+																	<li class="menu-item">
+																		<a href="#">CRC</a>
+																	</li>
+																</ul>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Балетки</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Аксессуары</a>
+															</li>
+
+															<li class="menu-item">
+																<a href="#">Винтажные коллекции</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="menu-item">
+														<a href="#">Аксессуары</a>
+													</li>
+
+													<li class="menu-item">
+														<a href="#">Винтажные коллекции</a>
+													</li>
+												</ul>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Где купить</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">О компании</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Блог</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Семья R-Class</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Справочник</a>
+											</li>
+
+											<li class="menu__item">
+												<a href="#">Контакты</a>
+											</li>
+										</ul>
+									</nav>
+
+									<ul class="menu__contact menu__list">
+										<li class="menu__item">
+											<a href="tel:74955105725">+7 (495) 510-57-25</a>
+										</li>
+
+										<li class="menu__item">
+											<a href="mailto:info@r-class.ru">info@r-class.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-header__action">
+								<a href="#" class="rs-header__search-link" id="search-show">
+									<svg viewBox="0 0 26 27" fill="none">
+										<circle cx="11.1121" cy="11.5496" r="10.5496" stroke="white"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M18.365 19.4062L24.9585 25.9998" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+
+								<div class="rs-header__language">
+									<div class="rs-header__language_btn">
+										<svg viewBox="0 0 27 27" fill="none">
+											<rect x="1" y="1" width="25" height="25" rx="12.5" stroke="white" />
+											<path
+												d="M17.25 1.625C19.5642 4.48407 21 9.09323 21 13.5C21 17.9068 19.5642 22.5159 17.25 25.375"
+												stroke="white" />
+											<path
+												d="M9.75 1.625C7.4358 4.48407 6 9.09323 6 13.5C6 17.9068 7.4358 22.5159 9.75 25.375"
+												stroke="white" />
+											<path d="M13.5 1V26" stroke="white" stroke-linecap="round" />
+											<path d="M26 13.5L1 13.5" stroke="white" stroke-linecap="round" />
+										</svg>
+									</div>
+									<ul class="rs-header__language_list">
+										<li class="menu__item"><a href="#" class="_active">Ru</a></li>
+										<li class="menu__item"><a href="#">En</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="rs-search" id="search-modal">
+				<div class="rs-search__overlay">
+					<div class="cursor">
+						<div class="cursor__point-zero">
+							<div class="cursor__wrapper">
+								<div class="cursor__circle">
+									<svg viewBox="0 0 19 19" fill="none">
+										<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rs-search__block">
+					<div class="rs-search__wrapper">
+						<form action="#" class="rs-search__form">
+							<div class="rs-search__line">
+								<button class="rs-search__btn rs-search__submit" type="submit">
+									<svg viewBox="0 0 26 27" fill="none">
+										<circle cx="11.1121" cy="11.5496" r="10.5496" stroke="white"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M18.365 19.4062L24.9585 25.9998" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+								<input type="text" placeholder="Напишите, что хотите найти" class="rs-search__input"
+									required>
+								<button class="rs-search__btn rs-search__clear" type="button">
+									<svg viewBox="0 0 19 19" fill="none">
+										<path d="M18 1L1 18M1 1L18 18" stroke="#C80151" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="rs-breadcrumbs">
+				<div class="rs-breadcrumbs__container">
+					<nav class="rs-breadcrumbs__navigation">
+						<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="rs-breadcrumbs__list">
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="home.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">Главная</span>
+								</a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope=""
+								itemtype="http://schema.org/ListItem">
+								<span itemprop="name">Где купить</span>
+								<meta itemprop="position" content="4">
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<link rel="stylesheet" href="css/rs-address.css">
+			<script>
+				// Данные каждого маркера
+				const branchData = [
+					{
+						address: 'г. Санкт-Петербург',
+						location: [59.938784, 30.314997],
+					},
+					{
+						address: 'г. Минск',
+						location: [53.902735, 27.555696],
+					},
+					{
+						address: 'г. Москва',
+						location: [55.755864, 37.617698],
+					},
+					{
+						address: 'г. Челябинск',
+						location: [55.159902, 61.402554],
+					},
+					{
+						address: 'г. Курган',
+						location: [55.441004, 65.341118],
+					},
+					{
+						address: 'г. Петрозаводск',
+						location: [54.862048, 69.138901],
+					},
+					{
+						address: 'г. Ханты-Мансийск',
+						location: [61.003151, 69.018820],
+					},
+				]
+				ymaps.ready(init);
+				function init() {
+					if (document.getElementById('map')) {
+						let map = new ymaps.Map('map', {
+							controls: [],
+							// Координаты центра карты
+							center: branchData[0].location,
+							// Уровень масштабирования
+							zoom: 5,
+						}, {
+							suppressMapOpenBlock: true,
+							balloonMaxWidth: 200,
+							searchControlProvider: 'yandex#search'
+						});
+
+						let pinsCollection = new ymaps.GeoObjectCollection({}, {
+							// preset: 'islands#blueDotIcon', // дефолт метка
+							draggable: false, // метки нельзя перемещать
+							iconLayout: 'default#imageWithContent', // указать данный тип макета.
+							iconImageHref: 'img/icons/map_pin_1.svg', // cвоё изображение иконки метки.
+							iconImageSize: [40, 42], // размеры метки
+							iconImageOffset: [-20, -21], // смещение левого верхнего угла иконки
+							iconContentOffset: [0, 0], // cмещение слоя с содержимым относительно слоя с картинкой
+						});
+
+						for (let i = 0; i < branchData.length; i++) {
+							let marks = new ymaps.Placemark(branchData[i].location, {
+								// Зададим содержимое заголовка балуна.
+								balloonContentHeader:
+									`${branchData[i].address}`
+								,
+
+								// Зададим содержимое всплывающей подсказки.
+								hintContent: `${branchData[i].address}`,
+							},)
+							pinsCollection.add(marks);
+						}
+
+						// Добавим метки на карту.
+						map.geoObjects.add(pinsCollection);
+
+						// Скрываем хинт при открытии балуна.
+						map.events.add('balloonopen', function (e) {
+							Map.hint.close();
+						});
+
+						// Закрываем балун по клику по карте
+						map.events.add('click', e => e.get('target').balloon.close());
+					}
+				}
+			</script>
+			<section class="rs-address">
+				<div class="rs-address__container">
+					<div class="rs-address__wrapper">
+						<div class="rs-address__shops">
+							<div class="rs-address__head">
+								<h4>Адреса магазинов</h4>
+							</div>
+
+							<div class="rs-address__search">
+								<form action="#" class="form">
+									<div class="form__wrapper">
+										<div class="form__block">
+											<div class="form__line">
+												<input autocomplete="off" type="text" name="form[]" required
+													placeholder="Улица или название магазина" class="rs-input">
+												<button class="form__btn form__submit" type="submit">
+													<svg viewBox="0 0 26 26" fill="none">
+														<circle cx="11.1121" cy="11.0496" r="10.5496" stroke="#C80151"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M18.3652 18.9064L24.9588 25.5" stroke="#C80151"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="rs-address__list">
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Австралия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Кейлор Парк
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Беларусь</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Минск
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Adagio</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Россия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Санкт-Петербург
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Россия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Москва
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Россия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Рязань
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Россия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Челябинск
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Россия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Курган
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-address__item">
+									<div class="rs-address__item_head">
+										<h5>Россия</h5>
+									</div>
+									<div class="rs-address__item_body">
+										<a href="#" class="rs-address__item_city">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.5 13.3333C9.5 13.6095 9.72386 13.8333 10 13.8333C10.2761 13.8333 10.5 13.6095 10.5 13.3333H9.5ZM6.7745 11.668C7.04415 11.6085 7.21446 11.3416 7.1549 11.072C7.09534 10.8023 6.82847 10.632 6.55883 10.6916L6.7745 11.668ZM13.4412 10.6916C13.1715 10.632 12.9047 10.8023 12.8451 11.072C12.7855 11.3416 12.9559 11.6085 13.2255 11.668L13.4412 10.6916ZM12.8333 5.83333C12.8333 7.39814 11.5648 8.66667 10 8.66667V9.66667C12.1171 9.66667 13.8333 7.95043 13.8333 5.83333H12.8333ZM10 8.66667C8.43519 8.66667 7.16667 7.39814 7.16667 5.83333H6.16667C6.16667 7.95043 7.88291 9.66667 10 9.66667V8.66667ZM7.16667 5.83333C7.16667 4.26853 8.43519 3 10 3V2C7.88291 2 6.16667 3.71624 6.16667 5.83333H7.16667ZM10 3C11.5648 3 12.8333 4.26853 12.8333 5.83333H13.8333C13.8333 3.71624 12.1171 2 10 2V3ZM9.5 9.16667V13.3333H10.5V9.16667H9.5ZM17 14.1667C17 14.4642 16.8664 14.7853 16.5484 15.1194C16.228 15.4562 15.7407 15.7821 15.1002 16.0668C13.8206 16.6355 12.0179 17 10 17V18C12.1243 18 14.0715 17.6183 15.5064 16.9806C16.2232 16.662 16.8342 16.2697 17.2728 15.8088C17.7139 15.3454 18 14.7896 18 14.1667H17ZM10 17C7.98214 17 6.17936 16.6355 4.89977 16.0668C4.25934 15.7821 3.77203 15.4562 3.45158 15.1194C3.1336 14.7853 3 14.4642 3 14.1667H2C2 14.7896 2.28614 15.3454 2.72719 15.8088C3.16579 16.2697 3.77682 16.662 4.49363 16.9806C5.9285 17.6183 7.87572 18 10 18V17ZM3 14.1667C3 13.7461 3.27374 13.2675 3.94468 12.7961C4.60674 12.331 5.58048 11.9318 6.7745 11.668L6.55883 10.6916C5.28332 10.9733 4.17373 11.4131 3.36984 11.9778C2.57483 12.5364 2 13.2784 2 14.1667H3ZM13.2255 11.668C14.4195 11.9318 15.3933 12.331 16.0553 12.7961C16.7263 13.2675 17 13.7461 17 14.1667H18C18 13.2784 17.4252 12.5364 16.6302 11.9778C15.8263 11.4131 14.7167 10.9733 13.4412 10.6916L13.2255 11.668Z"
+													fill="#C80151" />
+											</svg>
+											Петропавлоск
+										</a>
+										<div class="rs-address__item_details">
+											<h6>Energetiks</h6>
+											<ul>
+												<li>
+													Адрес:
+													<span>19 McGregors Drive VIC 3042</span>
+												</li>
+												<li>
+													Сайт:
+													<span>
+														<a href="www.energetiks.com.au">www.energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													E-mail:
+													<span>
+														<a
+															href="mailto:lynda@energetiks.com.au">Lynda@energetiks.com.au</a>
+													</span>
+												</li>
+												<li>
+													Телефон:
+													<span>
+														<a href="tel:61393361399">+61 3 9336 1399</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-address__map">
+							<div class="map" id="map"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css" />
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+					<img src="./img/footer/footer_big_logo.svg" alt="">
+				</div>
+
+				<div class="rs-footer__main" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+					<div class="rs-footer__container">
+						<div class="rs-footer__wrapper">
+							<div class="rs-footer__block">
+								<div class="rs-footer__logo">
+									<a href="./home.html">
+										<img src="./img/header/header_logo_red.svg" alt="">
+									</a>
+								</div>
+
+								<div class="rs-footer__contact">
+									<ul>
+										<li><a href="#"><img src="./img/icons/youtube.svg" alt=""></a></li>
+										<li><a href="#"><img src="./img/icons/vk.svg" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-footer__info">
+								<div class="rs-footer__info-list">
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="tel:74955105725">+7 (495) 510-57-25</a></li>
+											<li><a href="mailto:info@r-class.ru">info@r-class.ru</a></li>
+											<li><span>Пн-Пт: 10:00 - 18:00</span></li>
+											<li><span>143900, г. Балашиха, ул. Советская, д. 36</span></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">RC Collection</a></li>
+											<li><a href="#">Балетки</a></li>
+											<li><a href="#">Аксессуары</a></li>
+											<li><a href="#">Винтажные коллекции</a></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">Где купить?</a></li>
+											<li><a href="#">Блог</a></li>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Семья R-class</a></li>
+										</ul>
+									</div>
+
+									<div class="rs-footer__info-item">
+										<ul>
+											<li><a href="#">Видео</a></li>
+											<li><a href="#">Справочник</a></li>
+											<li><a href="#">Оптовым клиентам</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="rs-footer__bottom">
+									<div class="rs-footer__copyright">© ООО «Р-Класс». Все права защищены.</div>
+									<div class="rs-footer__dev"><a href="#">Разработано в Россайт</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 500, easing: "ease-out-quart", once: true });</script>
+	<script src="js/rs-sliders-init.js"></script>
+	<script src="js/rs-script.js"></script>
+
+</body>
+
+</html>

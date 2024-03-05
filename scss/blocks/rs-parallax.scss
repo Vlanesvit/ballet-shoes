@@ -1,0 +1,64 @@
+.rs-parallax {
+	padding: 57px 0px;
+
+	@media (max-width: 991.98px) {
+		padding: 30px 0px;
+	}
+
+	// .rs-parallax__bg
+	&__bg {
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	// .rs-parallax__container
+	&__container {
+	}
+
+	// .rs-parallax__content
+	&__content {
+		max-width: 950px;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+	}
+
+	// .rs-parallax__buttons
+	&__buttons {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			margin-top: 15px;
+		}
+
+		a {
+			@media (max-width: 767.98px) {
+				width: 100%;
+			}
+			&:not(:last-child) {
+				margin-right: 30px;
+
+				@media (max-width: 991.98px) {
+					margin-right: 15px;
+				}
+
+				@media (max-width: 767.98px) {
+					margin-bottom: 10px;
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}

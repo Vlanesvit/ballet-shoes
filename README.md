@@ -1,4 +1,16 @@
 # ballet-shoes
- 
+
 1. [Главная](https://vlanesvit.github.io/ballet-shoes/home.html)
-1. [RC10 - Особенности](https://vlanesvit.github.io/ballet-shoes/product.html)
+2. [RC10 - Особенности](https://vlanesvit.github.io/ballet-shoes/product.html)
+3. [RC Collection](https://vlanesvit.github.io/ballet-shoes/catalog.html)
+4. [Где купить](https://vlanesvit.github.io/ballet-shoes/where-buy.html)
+5. [О компании](https://vlanesvit.github.io/ballet-shoes/about.html)
+6. [Справочник](https://vlanesvit.github.io/ballet-shoes/directory.html)
+7. [История](https://vlanesvit.github.io/ballet-shoes/history.html)
+8. [Новости](https://vlanesvit.github.io/ballet-shoes/news.html)
+9. [Партнеры](https://vlanesvit.github.io/ballet-shoes/partners.html)
+10. [Контакты](https://vlanesvit.github.io/ballet-shoes/contact.html)
+11. [Шаблонная текстовая](https://vlanesvit.github.io/ballet-shoes/template.html)
+12. [404](https://vlanesvit.github.io/ballet-shoes/404.html)
+13. [Выдача поиска](https://vlanesvit.github.io/ballet-shoes/search.html)
+14. [Модальное окно - Размеры](https://vlanesvit.github.io/ballet-shoes/product.html#popup-size)
